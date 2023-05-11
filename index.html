@@ -13,6 +13,7 @@
   <title>Alrashed || Law Office</title>
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
 </head>
 
 <body>
@@ -27,7 +28,29 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutUs">About Us</a></li>
-            <li><a href="#experitise">Experitise</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+            <li><a href="#joinUs">Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="mobile_header">
+      <div class="header_wrap">
+        <div class="brand">
+          <img src="/assets/images/logo.png" />
+        </div>
+        <div class="menus">
+          <div class="menu_bar" id="menu_bar">
+            <img src="/assets/images/menuBar.png" />
+          </div>
+          <ul id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#expertise">Expertise</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="#contactUs">Contact Us</a></li>
             <li><a href="#joinUs">Join Us</a></li>
@@ -37,7 +60,7 @@
     </div>
   </section>
   <!-- Banner -->
-  <section>
+  <section id="home">
     <div class="banner_wrap">
       <div class="banner">
         <div class="banner_content">
@@ -101,7 +124,7 @@
     </div>
   </section>
   <!-- Awarded -->
-  <section>
+  <section id="aboutUs">
     <div class="awarded_wrap">
       <div class="awarded">
         <div class="awarded_img">
@@ -114,7 +137,7 @@
     </div>
   </section>
   <!-- Expertise -->
-  <section>
+  <section id="expertise">
     <div class="expertise_wrap">
       <div class="expertise">
         <div class="ex_img">
@@ -199,7 +222,7 @@
     </div>
   </section>
   <!-- Media -->
-  <section>
+  <section id="media">
     <div class="media_wrap">
       <div class="media">
         <div class="media_header">
@@ -212,7 +235,7 @@
           </div>
         </div>
         <div class="media_items">
-          <div class="m_item">
+          <div class="mobile_none m_item">
             <div class="m_item_title">
               <h5>Alrasheed Law Firm Advises on Dual Public / Private Acquisitions</h5>
             </div>
@@ -223,7 +246,7 @@
               <img src="/assets/images/media1.png" />
             </div>
           </div>
-          <div class="m_item">
+          <div class=" m_item">
             <div class="m_item_title">
               <h5>Alrasheed Law Firm Ranked as Leading KSA Firm by Chambers Global </h5>
             </div>
@@ -234,7 +257,7 @@
               <img src="/assets/images/media2.png" />
             </div>
           </div>
-          <div class="m_item">
+          <div class="mobile_none m_item">
             <div class="m_item_title">
               <h5>Alrasheed Law Firm named Capital Markets Legal Adviser of the Year</h5>
             </div>
@@ -305,8 +328,57 @@
       </div>
     </div>
   </section>
-  <!-- Join Us -->
+
   <section>
+    <div class="mobile_our_team_wrap">
+      <div class="our_team">
+        <div class="ot_content">
+          <div class="ot_header">
+            <div class="ot_title">
+              <h1>Our Team</h1>
+            </div>
+          </div>
+          <div class="ot_details">
+            <p>In Al-Rasheed Law Firm we seek, attract, and celebrate only the leading lawyers and specialists of
+              their respective fields.</p>
+          </div>
+
+          <div class="ot_img">
+            <div class="ot_img_wrap">
+              <img src="/assets/images/team1.png" />
+              <div class="ot_arrow">
+                <div class="arrow_btn">
+                  <div class="arrow_img">
+                    <img src="/assets/images/arrowRight.png" alt="arrow" />
+                  </div>
+                  <span>Meet Our Team </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ot_img_slider">
+            <div class="ots">
+              <div class="ots_item">
+                <img src="/assets/images/sliderImage.png" />
+              </div>
+            </div>
+          </div>
+          <div class="slider_arrow">
+            <div class="sa_wrap">
+              <div class="sal">
+                <img src="/assets/images/saLeft.png" alt="img" />
+              </div>
+              <div class="sar">
+                <img src="/assets/images/saRight.png" alt="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Join Us -->
+  <section id="joinUs">
     <div class="join_us_wrap">
       <div class="join_us">
         <div class="joinus_content">
@@ -344,6 +416,9 @@
     <div class="at_your_service_wrap">
       <div class="ays">
         <div class="ays_inner">
+          <div class="mobile_lang_img">
+            <img class="" src="assets/images/langImg.png" alt="img" />
+          </div>
           <div class="dark_bt">
             <h1>At your service</h1>
             <div class="service_list">
@@ -353,17 +428,17 @@
             </div>
           </div>
         </div>
-        <div class="text_right pb_100">
-          <img src="/assets/images/phone.png" />
+        <div class="text_right pb_100 ">
+          <img class="cp" src="/assets/images/phone.png" />
         </div>
       </div>
     </div>
   </section>
   <!-- Footer -->
-  <section>
+  <section id="contactUs">
     <div class="footer_nav_wrap">
       <div class="footer_nav">
-        <div class="backTop">
+        <div class="backTop" id="backTop">
           <div class="color_bar"></div>
           <img src="/assets/images/arrowup.png" />
           <p>Back to Top</p>
@@ -420,7 +495,7 @@
     </div>
   </section>
   <!-- footerEnd -->
-  <footer>
+  <footer >
     <div class="footer_wnd_wrap">
       <div class="footer_end">
         <a href="#">Terms & Conditions</a>
@@ -429,6 +504,8 @@
       </div>
     </div>
   </footer>
+  <!-- JS -->
+  <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
