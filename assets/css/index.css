@@ -1,0 +1,502 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* common CSS */
+.pb_100 {
+    padding-bottom: 100px;
+}
+
+.pt_100 {
+    padding-top: 100px;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #343434;
+    font-weight: 400;
+}
+
+p {
+    font-size: 24px;
+    color: #555555;
+}
+
+.arrow_btn {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow_img {
+    padding-top: 6px;
+}
+
+.arrow_btn img {
+    width: 40px;
+}
+
+.arrow_btn span {
+    color: #FA636B;
+    font-size: 24px;
+}
+
+/* Header Start */
+.header {
+    background-color: white;
+}
+
+.header_wrap {
+    padding: 0 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menus ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menus ul li {
+    display: inline-block;
+}
+
+.menus ul li a {
+    cursor: pointer;
+    color: #555555;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menus ul li a:hover {
+    color: #D0222B
+}
+
+/*========================== Banner  */
+.banner_wrap {
+    background-color: #E7E7E7;
+    padding-top: 11px;
+}
+
+.banner {
+    background-image: url("../images/bannerBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1200px;
+    position: relative;
+}
+
+.banner_content {
+    position: absolute;
+    top: 45%;
+    left: 115px;
+}
+
+.banner_content h1 {
+    font-size: 60px;
+    text-shadow: 0px 0px 8px darkgray;
+    color: #F5F5F5;
+}
+
+/* Local */
+.local_wrap {
+    margin: 0 165px;
+    margin-top: 85px;
+}
+
+.local {
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 180px;
+}
+
+
+.team_img img {
+    width: 100%;
+}
+
+/* leading */
+.leading_transactional_law {
+    display: flex;
+    align-items: center;
+}
+
+.leading_content {
+    width: 50%;
+}
+
+.leading_img {
+    width: 50%;
+}
+
+.leading_img img {
+    width: 100%;
+}
+
+/* Awarded */
+.awarded {
+    background-color: #D0222B;
+    display: flex;
+    padding: 100px 0;
+    align-items: center;
+}
+
+.awarded_img {
+    width: 50%;
+}
+
+.awarded_img img {
+    width: 100%;
+}
+
+.awarded_content {
+    padding: 0 50px;
+    width: 50%;
+}
+
+.awarded_content h3 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* Expertise */
+.expertise {
+    background-color: #343434;
+    display: flex;
+    padding: 100px 0;
+    align-items: center;
+}
+
+.ex_img {
+    width: 45%;
+}
+
+.ex_img img {
+    width: 100%;
+}
+
+.ex_content {
+    padding: 0 50px;
+    width: 55%;
+}
+
+.ex_header {
+    margin-bottom: 16px;
+}
+
+.ex_title h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 65px;
+}
+
+.ex_details p {
+    color: #AEAEAE;
+}
+
+.ex_items {
+    padding: 50px;
+}
+
+.ex_item {
+    margin-top: 35px;
+    border-bottom: 1px solid #F5F5F5;
+    gap: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ex_item span {
+    color: #F5F5F5;
+    font-size: 28px;
+}
+
+.ex_item>div:first-child {
+    margin-right: 60px;
+}
+
+.arrow_out {
+    padding-top: 6px;
+    margin-left: auto;
+}
+
+.arrow_out img {
+    width: 30px;
+}
+
+/* What they are saying */
+.wtas {
+    padding: 200px 160px 500px 160px;
+    background: #B0B0B0;
+}
+
+.wtas_title {
+    margin-bottom: 50px;
+}
+
+.wtas_title h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+.wtas_details {
+    margin-bottom: 50px;
+}
+
+.wtas_details p {
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+}
+
+.wtas_footer_title h2 {
+    font-size: 30px;
+    text-transform: lowercase;
+    text-align: center;
+    color: white;
+}
+
+/* Media */
+.media_wrap {
+    background-color: #E7E7E7;
+}
+
+.media {
+    margin: 0 165px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.media_header {
+    width: 500px;
+}
+
+.m_title h1 {
+    color: #343434;
+    font-weight: 900;
+    font-size: 65px;
+}
+
+.m_details p {
+    font-size: 20px;
+}
+
+.media_items {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.m_item {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    padding-left: 15px;
+    margin-right: 50px;
+    border-left: 1px solid #9e9696d5;
+}
+
+.m_item_title {
+    margin-bottom: 10px;
+}
+
+.m_item_title h5 {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+.m_date {
+    margin-bottom: 30px;
+}
+
+.m_date span {
+    color: #AEAEAE;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.m_image {
+    margin-top: auto;
+}
+
+.m_image img {
+    width: 100%;
+}
+
+/* Our Team */
+.our_team_wrap {
+    margin: 0 165px;
+}
+
+.our_team {
+    gap: 100px;
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.ot_content {
+    width: 40%;
+    padding-top: 80px;
+} 
+.ot_arrow{
+    
+    display: flex; 
+    margin-left: auto;
+    margin-top: 40px;
+    justify-content: end;
+}
+
+.ot_title {
+    margin-bottom: 20px;
+}
+
+.ot_title h1 {
+    font-size: 65px;
+    font-weight: 900;
+    color: #343434;
+}
+
+.ot_details {
+    margin-bottom: 50px;
+}
+
+.ot_img_slider {}
+
+.ot_img_slider img {
+    width: 100%;
+}
+
+.ots {
+    padding-right: 80px;
+}
+
+.ots_item {}
+
+.ot_img {
+    width: 60%;
+}
+
+.ot_img img {
+    width: 100%;
+}
+
+.slider_arrow {
+    margin-top: 50px;
+}
+
+.sa_wrap {
+    justify-content: end;
+    display: flex;
+    gap: 30px;
+}
+
+.sal {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FA636B;
+}
+
+.sal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+}
+
+.sar {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FA636B;
+}
+
+.sar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    /* CSS rules for desktop devices */
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for tablet devices */
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) and (min-width: 430px) {
+    /* CSS rules for mobile devices */
+}
+
+/* Extra small mobile styles */
+@media screen and (max-width: 429px) {
+    /* CSS rules for extra small mobile devices */
+}
+
+/* Header End */
