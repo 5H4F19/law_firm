@@ -15,8 +15,33 @@ body {
     padding: 0;
 }
 
+.mt_15 {
+    margin-top: 15px;
+}
+
+.text_right{
+    text-align: right;
+}
+.custom_arrow_btn {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.custom_arrow_btn span {
+    color: #FA636B;
+    font-size: 24px;
+}
+
 img {
     max-width: 100%;
+}
+
+.dark_bt h1 {
+    color: #343434;
+    font-weight: 900;
+    font-size: 65px;
 }
 
 /* common CSS */
@@ -372,10 +397,11 @@ p {
 .ot_content {
     width: 40%;
     padding-top: 80px;
-} 
-.ot_arrow{
-    
-    display: flex; 
+}
+
+.ot_arrow {
+
+    display: flex;
     margin-left: auto;
     margin-top: 40px;
     justify-content: end;
@@ -455,16 +481,68 @@ p {
     width: 22px;
 }
 
+/* Join Us */
+.join_us {
+    padding-top: 100px;
+    margin: 0 160px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.joinus_content {
+    text-align: right;
+    width: 45%;
+}
+
+.joinus_img {
+    width: 65%;
+}
+
+.ji_content img {
+    width: 100%;
+}
+
+.j_arrow_wrap {
+    display: inline-block
+}
+
+.ji_content_wrap {
+    padding-top: 40px;
+    justify-content: end;
+    margin-bottom: 250px;
+}
+
+.ji_content {
+    width: 45%;
+}
+
+.ji_content h2 {
+    font-size: 30px;
+    color: #343434;
+}
 
 
-
-
-
-
-
-
-
-
+/* At your service */
+.ays {
+    background: #D9D3D3;
+    padding: 0 160px;
+    padding-top: 100px;
+}
+.ays_inner{
+    background-image: url(/assets/images/langImg.png);
+    background-repeat: no-repeat;
+    padding: 100px 150px;
+    background-position: right;
+}
+.service_list {
+    margin-top: 20px;
+}
+.service_list p span{
+    font-size: 28px;
+    margin-left: 20px;
+    color: #343434;
+}
 
 
 
