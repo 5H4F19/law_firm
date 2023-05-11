@@ -51,7 +51,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
   return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
-// mybutton.addEventListener("click", topFunction);
+mybutton.addEventListener("click", topFunction);
 // toggle
 // get the menu_bar and ul elements
 const menuBar = document.getElementById('menu_bar');
