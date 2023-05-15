@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
     font-weight: 400;
+    width: '100%';
     font-family: 'Roboto', sans-serif;
-    font-size: 16px; 
-    color: #555555;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -38,10 +39,6 @@ body {
     font-size: 24px;
 }
 
-img {
-    max-width: 100%;
-}
-
 .dark_bt h1 {
     color: #343434;
     font-weight: 900;
@@ -61,7 +58,7 @@ img {
     margin-bottom: 15px;
 }
 
-h2 {
+/* h2 {
     font-size: 40px;
     color: #343434;
     font-weight: 400;
@@ -70,7 +67,7 @@ h2 {
 p {
     font-size: 24px;
     color: #555555;
-}
+} */
 
 .arrow_btn {
     cursor: pointer;

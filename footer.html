@@ -1,21 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet"
-            />
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="">
-        <footer class="bg-green-500 flex items-center justify-center text-2xl
-            h-24">
-            Footer
-        </footer>
-    </body>
-</html>
+<section class="relative flex bg-[#D0222B]">
+    <!-- Scroll to Top -->
+    <div class="relative items-center w-7 md:w-20 md:flex">
+        <div class="absolute top-0 right-0 left-0 bg-white h-24"></div>
+        <div onclick="goUp()" class="flex scale-75 md:scale-100 h-full flex-col
+            justify-center
+            items-center gap-x-4">
+            <img class="h-32" src="/assets/images/arrowup.png" />
+            <p class="-rotate-90 bg-[#D0222B] w-40 px-5 text-white text-xl">Back
+                to Top</p>
+        </div>
+    </div>
+    <div class="flex-1">
+        <div class="dark p-6 text-sm font-light space-y-5 z-20">
+            <div class="flex justify-between">
+                <div class="w-5/12">
+                    <h4 class="text-xl opacity-30">Contact us</h4>
+                    <h4 class="text-lg">Address</h4>
+                    <address>
+                        2nd Floor Siricon Building, No. (8) Back EntranceOlaya,
+                        Mousa
+                        Bin
+                        Nossair St.,Riyadh, Saudi Arabia
+                    </address>
+                </div>
+                <div class="w-5/12">
+                    <div class="">
+                        <div class="flex-1 gap-x-3">
+                            <div><strong>Phone</strong></div>
+                            <div>+966 11 4646777</div>
+                        </div>
+                        <div class="flex-1 gap-x-3">
+                            <div><strong>Email</strong></div>
+                            <div>omar@alrasheedlaw.com</div>
+                        </div>
+                        <div class="flex-1 gap-x-3">
+                            <div><strong>Riyadh</strong></div>
+                            <div>
+                                <address>
+                                    PO Box 300294
+                                    Riyadh 11372 Riyadh, Saudi
+                                    Arabia
+                                </address>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div class="w-5/12">
+                    <h4>Members of the IBA since 2009</h4>
+                    <img src="/assets/images/iba.png" />
+                </div>
+                <div class="w-5/12">
+                    <p>Members of the Multilaw since 2013</p>
+                    <img src="/assets/images/multilaw.png" alt="img" />
+                </div>
+            </div>
+            <div class="flex items-center gap-3 justify-center">
+                <h4 class="text-xl opacity-30">Follow us On</h4>
+                <div class="flex items-center gap-3">
+                    <img class="h-5 w-5" src="/assets/images/instagram.png"
+                        alt="img" />
+                    <img class="h-5 w-5" src="/assets/images/twitter-sign.png"
+                        alt="img"
+                        />
+                    <img class="h-5 w-5" src="/assets/images/linkedin.png"
+                        alt="img"
+                        />
+                </div>
+            </div>
+        </div>
+        <div class="p-5 bg-[#D0222B]">
+            <div class="flex flex-wrap items-center justify-around text-white">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#" class="">© 2023 — Omar Al-Rasheed & Partners Law
+                    Firm</a>
+            </div>
+        </div>
+    </div>
+</section>
