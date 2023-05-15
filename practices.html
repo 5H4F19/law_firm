@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+            />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="light text-[#555555]">
+        <!-- Header -->
+        <div id="header"></div>
+        <div class="p-6 md:p-12 md:max-w-7xl mx-auto my-10">
+            <div class="uppercase w-full text-xl text-[#343434]">Expertise</div>
+            <p class="md:text-3xl lg:text-4xl ml-auto w-11/12 lg:leading-10">
+                We have a strong, <span class="md:font-bold">multidisciplinary</span>
+                team comprising around <span class="md:font-bold">fifty
+                    lawyers, professionals and specialists</span> organized
+                across various
+                key <span class="md:font-bold">practice areas</span> and <span
+                    class="md:font-bold">sectors.</span>
+            </p>
+        </div>
+        <div class="flex items-center justify-between p-6 md:p-12 md:max-w-7xl
+            mx-auto">
+            <div class="relative px-5 my-5">
+                <img class="absolute w-6" src="assets/images/search.svg"
+                    alt="">
+                <input
+                    class="placeholder:text-black/50 text-black border-b
+                    border-black/30 w-full
+                    bg-transparent
+                    px-14
+                    py-1
+                    outline-none
+                    focus:outline-none"
+                    type="text"
+                    placeholder="Search"/>
+            </div>
+            <div class="flex flex-col sm:flex-row w-fit rounded-full
+                overflow-hidden bg-white">
+                <button class="tab-button py-4 w-32 rounded-full
+                    focus:outline-none bg-[#555555] text-white"
+                    onclick="openTab(event, 'practices')">Practices</button>
+                <button class="tab-button py-4 w-32 rounded-full
+                    focus:outline-none"
+                    onclick="openTab(event,
+                    'sectors')">Sectors</button>
+            </div>
+        </div>
+        <!-- Practices -->
+        <div class="grid tab-content grid-cols-4 gap-16 px-20
+            text-[#555555]
+            md:max-w-7xl
+            mx-auto"
+            id="practices"></div>
+        <!-- Sectors -->
+        <div class="grid tab-content grid-cols-4 gap-16 px-20
+            text-[#555555]
+            md:max-w-7xl
+            mx-auto" id="sectors"></div>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <script>
+            // Tabs
+            function openTab(evt, tabName) {
+                var i, tabContent, tabButton;
+                tabContent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.add("hidden")
+                console.log(tabContent[i])
+                }
+                tabButton = document.getElementsByClassName("tab-button");
+                for (i = 0; i < tabButton.length; i++) {
+                tabButton[i].classList.remove("bg-[#555555]","text-white");
+                }
+                document.getElementById(tabName).classList.remove("hidden")
+                evt.currentTarget.classList.add("bg-[#555555]","text-white");
+            }
+        </script>
+        <script type="module">
+            import {data} from './data/practices.js'
+            import {sectors} from './data/sectors.js'
+            console.log(sectors)
+            // Rendering practices array
+            const arrayDiv = document.getElementById('practices')
+            console.log(arrayDiv)
+            data?.forEach(item => {
+                const anchor = document.createElement("a");
+                const itemDiv = document.createElement("div");
+                const typeP = document.createElement("p");
+                typeP.textContent = item.type;
+                typeP.className = "mx-auto text-center"
+                const imgP = document.createElement("img");
+                imgP.src = item.img;
+                imgP.className = "mx-auto w-8 h-8";
+                itemDiv.appendChild(imgP);
+                itemDiv.appendChild(typeP);
+                anchor.appendChild(itemDiv);
+                anchor.href = "/practices-[slug].html"
+                arrayDiv.appendChild(anchor);
+            });
+            // Rendering sector array
+            const sectorArrayDiv = document.getElementById('sectors')
+            sectors?.forEach(item => {
+                const anchor = document.createElement("a");
+                const itemDiv = document.createElement("div");
+                const typeP = document.createElement("p");
+                typeP.textContent = item.type;
+                typeP.className = "mx-auto text-center"
+                const imgP = document.createElement("img");
+                imgP.src = item.img;
+                imgP.className = "mx-auto w-8 h-8";
+                itemDiv.appendChild(imgP);
+                itemDiv.appendChild(typeP);
+                anchor.appendChild(itemDiv)
+                anchor.href = "/practices-[slug].html"
+                sectorArrayDiv.appendChild(anchor);
+            });
+        </script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

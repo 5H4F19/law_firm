@@ -1,0 +1,31 @@
+ html,body{
+        background: #E5E5E5;
+        font-family: 'Roboto';
+      }
+      p {
+        color: #555555;
+      }
+
+.dark{
+  background: #343434;
+  color: whitesmoke;
+}
+.light{
+  background: #E7E7E7;
+  color: black;
+}
+input:focus{
+  outline: none;
+}
+
+iframe{
+  width: '100%';
+  height: fit-content;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+label{
+  color: black;
+  font-weight: 300;
+}
