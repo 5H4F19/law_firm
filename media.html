@@ -13,48 +13,41 @@
         <link rel="stylesheet" href="/assets/css/index.css">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-[#2F343C]">
+    <body class="bg-light">
+        <!-- Header -->
         <div id="header"></div>
-        <div class="flex flex-col md:flex-row items-start md:gap-5 text-white
-            p-6 md:p-12">
+
+        <div class="flex dark flex-col md:flex-row items-start md:gap-5 text-white p-6 md:p-12">
             <!-- Featured -->
             <div class="order-last">
-                <h5 class="uppercase text-xl font-light my-5 text-center
-                    md:text-left">Featured</h5>
+                <h5 class="uppercase text-xl font-light my-5 text-center md:text-left">Featured</h5>
+                <!-- Feature blog 1 -->
                 <div class="grid grid-cols-2 md:grid-cols-1 gap-6">
                     <div class="md:border-l border-white/20 md:px-2 space-y-2">
-                        <h5 class="font-light text-sm">Alrasheed Law Firm named
-                            Capital
-                            Markets Legal Adviser
-                            of
-                            the Year</h5>
+                        <h5 class="font-light text-sm">Alrasheed Law Firm named Capital Markets Legal Adviser of the Year</h5>
                         <h6 class="font-light">26.1.2023</h6>
                         <img src="assets/images/media/1media 1.png" alt="">
                     </div>
+                    <!-- Feature blog 2 -->
                     <div class="md:border-l border-white/20 md:px-2 space-y-2">
-                        <h5 class="font-light text-sm">Alrasheed Law Firm named
-                            Capital
-                            Markets Legal Adviser
-                            of
-                            the Year</h5>
+                        <h5 class="font-light text-sm">Alrasheed Law Firm named Capital Markets Legal Adviser of the Year</h5>
                         <h6 class="font-light">26.1.2023</h6>
-                        <img src="assets/images/media/1media 1.png"
-                            alt="">
-
+                        <img src="assets/images/media/1media 1.png" alt="">
                     </div>
                 </div>
             </div>
+
             <!-- Blog -->
             <div class="order-fast md:order-last space-y-3">
+                <!-- Avatar -->
                 <div class="flex gap-x-3">
-                    <img class="h-12 w-12 rounded-full"
-                        src="assets/images//2.png"
-                        alt="">
+                    <img class="h-12 w-12 rounded-full" src="assets/images//2.png" alt="">
                     <div class="">
                         <h5 class="uppercase font-light">CBB MEDIA</h5>
                         <h6 class="font-light">1d</h6>
                     </div>
                 </div>
+                <!-- Content -->
                 <p class="text-white">
                     Amet minim mollit non deserunt ullamco est sit aliqua
                     dolor
@@ -62,13 +55,12 @@
                     mollit. Exercitation veniam consequat sunt nostrud
                     amet.Proin sit amet condimentum orci.
                 </p>
-                <a href="/#" class="flex gap-x-3 items-center
-                    text-[#FA636B]">
-                    <img class="h-2 rounded-full"
-                        src="assets/images//arrow.svg"
-                        alt=""/>
+                <!-- Read more -->
+                <a href="/#" class="flex gap-x-3 items-center text-[#FA636B]">
+                    <img class="h-2 rounded-full" src="assets/images//arrow.svg"alt=""/>
                     Read more
                 </a>
+                <!-- Blog image -->
                 <img class="w-full" src="assets/images//blog-1.png" alt="">
             </div>
         </div>
@@ -82,34 +74,35 @@
                 md:max-w-7xl
                 mx-auto">
                 <!-- Tab buttons -->
-                <div class="flex-col ml-auto order-1 rounded-full
-                    overflow-hidden bg-white">
-                    <button class="tab-button py-4 w-32 rounded-full
-                        focus:outline-none bg-[#555555] text-white"
-                        onclick="openTab(event, 'insights')">Insights</button>
-                    <button class="tab-button py-4 w-32 rounded-full
-                        focus:outline-none"
-                        onclick="openTab(event,
-                        'news')">News</button>
+                <div class="flex-col ml-auto order-1 rounded-full overflow-hidden bg-white">
+                    <button 
+                        class="tab-button py-4 w-32 rounded-full focus:outline-none bg-[#555555] text-white"
+                        onclick="openTab(event, 'insights')">
+                        Insights
+                    </button>
+                    <button 
+                        class="tab-button py-4 w-32 rounded-full focus:outline-none"
+                        onclick="openTab(event,'news')">
+                        News
+                    </button>
                 </div>
-                <div class="order-last md:order-first relative px-5 my-5
-                    flex-1">
-                    <h4 class="text-3xl font-light uppercase tracking-wider">Latest
-                        updates</h4>
+                <!-- Headline -->
+                <div class="order-last md:order-first relative px-5 my-5 flex-1">
+                    <h4 class="text-3xl font-light uppercase tracking-wider">Latest updates</h4>
                 </div>
             </div>
+
             <!-- Insights -->
-            <div class="tab-content grid grid-cols-2 md:grid-cols-4 p-6 gap-5
-                md:p-12
-                md:max-w-7xl
-                mx-auto" id="insights"></div>
+            <div class="tab-content grid grid-cols-2 md:grid-cols-4 p-6 gap-5 md:p-12 md:max-w-7xl mx-auto" id="insights"></div>
+           
             <!-- News -->
-            <div class="tab-content grid grid-cols-2 md:grid-cols-4 p-6 gap-5
-                md:p-12
-                md:max-w-7xl
-                mx-auto" id="news"></div>
+            <div class="tab-content grid grid-cols-2 md:grid-cols-4 p-6 gap-5 md:p-12 md:max-w-7xl mx-auto" id="news"></div>
         </div>
+
+        <!-- Footer  -->
         <div id="footer"></div>
+
+        
         <script>
             // Tabs
             function openTab(evt, tabName) {

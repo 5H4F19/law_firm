@@ -16,37 +16,34 @@
     <body class="light text-[#555555]">
         <!-- Header -->
         <div id="header"></div>
+
         <!-- Headlines or Hero -->
         <div class="p-6 md:p-12 md:max-w-7xl mx-auto my-10">
             <div class="uppercase w-full text-xl text-[#343434]">Expertise</div>
-            <p class="md:text-3xl lg:text-4xl ml-auto w-full md:w-11/12
-                lg:leading-10">
+            <p class="md:text-3xl lg:text-4xl ml-auto w-full md:w-11/12 lg:leading-10">
                 We have a strong, <span class="md:font-bold">multidisciplinary</span>
-                team comprising around <span class="md:font-bold">fifty
-                    lawyers, professionals and specialists</span> organized
-                across various
-                key <span class="md:font-bold">practice areas</span> and <span
-                    class="md:font-bold">sectors.</span>
+                team comprising around <span class="md:font-bold">fifty lawyers, professionals and specialists</span> organized
+                across various key <span class="md:font-bold">practice areas</span> and <span class="md:font-bold">sectors.</span>
             </p>
         </div>
+
         <!-- Tab buttons -->
-        <div class="flex flex-col md:flex-row items-center justify-between p-6
-            md:p-12
-            md:max-w-7xl
-            mx-auto">
-            <div class="flex-col ml-auto rounded-full
-                overflow-hidden bg-white">
-                <button class="tab-button py-4 w-32 rounded-full
-                    focus:outline-none bg-[#555555] text-white"
-                    onclick="openTab(event, 'practices')">Practices</button>
-                <button class="tab-button py-4 w-32 rounded-full
-                    focus:outline-none"
-                    onclick="openTab(event,
-                    'sectors')">Sectors</button>
+        <div class="flex flex-col md:flex-row items-center justify-between p-6 md:p-12 md:max-w-7xl mx-auto">
+            <div class="flex-col ml-auto rounded-full overflow-hidden bg-white">
+                <button 
+                    class="tab-button py-4 w-32 rounded-full focus:outline-none bg-[#555555] text-white"
+                    onclick="openTab(event, 'practices')">
+                    Practices
+                </button>
+                <button 
+                    class="tab-button py-4 w-32 rounded-full focus:outline-none"
+                    onclick="openTab(event,'sectors')">
+                    Sectors
+                </button>
             </div>
+            <!-- Search inout -->
             <div class="order-last md:order-first relative px-5 my-5 flex-1">
-                <img class="absolute w-6" src="assets/images/search.svg"
-                    alt="">
+                <img class="absolute w-6" src="assets/images/search.svg" alt="">
                 <input
                     class="placeholder:text-black/50 text-black border-b
                     border-black/30 w-full
@@ -58,28 +55,16 @@
                     type="text"
                     placeholder="Search"/>
             </div>
-
         </div>
+
         <!-- Practices -->
-        <div class="grid tab-content grid-cols-2 md:grid-cols-4 md:gap-16
-            md:px-20
-            gap-8
-            px-10
-            items-center
-            text-[#555555]
-            md:max-w-7xl
-            mx-auto"
-            id="practices"></div>
+        <div id="practices" class="grid tab-content mb-10 grid-cols-2 md:grid-cols-4 md:gap-16 md:px-20 gap-8 px-10 items-center text-[#555555] md:max-w-7xl mx-auto"></div>
         <!-- Sectors -->
-        <div class="grid tab-content grid-cols-2 md:grid-cols-4 md:gap-16
-            md:px-20
-            gap-8
-            px-10
-            text-[#555555]
-            md:max-w-7xl
-            mx-auto" id="sectors"></div>
+        <div id="sectors" class="grid tab-content mb-20 grid-cols-2 md:grid-cols-4 md:gap-16 md:px-20 gap-8 px-10 text-[#555555] md:max-w-7xlmx-auto" ></div>
         <!-- Footer -->
         <div id="footer"></div>
+
+
         <script>
             // Tabs
             function openTab(evt, tabName) {

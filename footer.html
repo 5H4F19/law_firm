@@ -1,17 +1,14 @@
-<section class="relative flex bg-[#D0222B]">
+<section class="relative flex">
     <!-- Scroll to Top -->
-    <div class="relative items-center w-7 md:w-20 md:flex">
-        <div class="absolute top-0 right-0 left-0 bg-white h-24"></div>
-        <div onclick="goUp()" class="flex scale-75 md:scale-100 h-full flex-col
-            justify-center
-            items-center gap-x-4">
-            <img class="h-32" src="/assets/images/arrowup.png" />
-            <p class="-rotate-90 bg-[#D0222B] w-40 px-5 text-white text-xl">Back
-                to Top</p>
+    <div class="relative flex-col w-7 md:w-20 flex">
+        <div class="bg-inherit h-20 w-full"></div>
+        <div onclick="goUp()" class="flex-1 bg-[#D0222B] flex items-center justify-center cursor-pointer">
+            <img src="assets/images/back.svg" alt="">
         </div>
     </div>
     <div class="flex-1">
         <div class="dark p-6 text-sm font-light space-y-5 z-20">
+            <!-- Address -->
             <div class="flex justify-between">
                 <div class="w-5/12">
                     <h4 class="text-xl opacity-30">Contact us</h4>
@@ -43,10 +40,11 @@
                                 </address>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
+            <!-- Contacts -->
             <div class="flex justify-between">
                 <div class="w-5/12">
                     <h4>Members of the IBA since 2009</h4>
@@ -57,26 +55,24 @@
                     <img src="/assets/images/multilaw.png" alt="img" />
                 </div>
             </div>
+
+            <!-- Socials -->
             <div class="flex items-center gap-3 justify-center">
                 <h4 class="text-xl opacity-30">Follow us On</h4>
                 <div class="flex items-center gap-3">
-                    <img class="h-5 w-5" src="/assets/images/instagram.png"
-                        alt="img" />
-                    <img class="h-5 w-5" src="/assets/images/twitter-sign.png"
-                        alt="img"
-                        />
-                    <img class="h-5 w-5" src="/assets/images/linkedin.png"
-                        alt="img"
-                        />
+                    <img class="h-5 w-5" src="/assets/images/instagram.png" alt="img" />
+                    <img class="h-5 w-5" src="/assets/images/twitter-sign.png" alt="img"/>
+                    <img class="h-5 w-5" src="/assets/images/linkedin.png" alt="img"/>
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
         <div class="p-5 bg-[#D0222B]">
             <div class="flex flex-wrap items-center justify-around text-white">
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Cookie Policy</a>
-                <a href="#" class="">© 2023 — Omar Al-Rasheed & Partners Law
-                    Firm</a>
+                <a href="#" class="">© 2023 — Omar Al-Rasheed & Partners Law Firm</a>
             </div>
         </div>
     </div>
